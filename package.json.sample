@@ -31,10 +31,10 @@
     "parser": "babel-eslint"
   },
   "scripts": {
-    "preinstall": "npm install -g karma",
+    "preinstall": "npm install -g babel browserify",
     "start": "NODE_ENV=production NODE_PATH=js src dist",
-    "babel": "babel ./src --out-dir ./js --blacklist js,dist,sample",
-    "browserify": "browserify -d --compact false ./js/app.js > ./dist/build.js",
+    "babel": "babel ./ --out-dir ./js --ignore ./sample,./node_modules",
+    "browserify": "browserify -d --compact false ./sample/js/app.js > ./sample/dist/build.js",
     "build": "npm run babel; npm run browserify"
   },
   "preferGlobal": true,
