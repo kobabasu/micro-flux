@@ -20,21 +20,14 @@ docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/ww
 1. exit
 
 ## app
-1. touch .bowerrc bower.json package.json, index.html
-1. .bowerrc
-* ./vendorで設定
-1. package.json
-* jquery, react, flux, object-assignを追記
-* (broweserにjquery, reactのパスを書き込む) 書き込まなくてもよい
-1. npm install
-
-## compile
-1. hub clone kobabasu/micro-flux src
-1. babel -d app/js babel/
-1. browserify js/app.js t babelify --compact false -o js/build.js
+1. touch index.html
+1. package.json.sampleを利用するか、そのままリネームし使用する
+1. package.jsonのscriptsよりビルド後の出力先のディレクトリを確認・作成
 1. index.htmlへ 
 * `<script src="js/build.js">`を追加
 * `<div id="virtual-dom"></div>`を追加
+1. npm install
+1. npm run build
 
 ## 確認
 1. http://localhost:8080/で確認
