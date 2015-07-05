@@ -1,0 +1,24 @@
+{
+  "name": "flux-app",
+  "version": "0.0.1",
+  "dependencies": {},
+
+  "devDependencies": {
+    "react": "*",
+    "object-assign": "*",
+    "flux": "*"
+  },
+
+  "browser": {
+  },
+
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+
+  "scripts": {
+    "babel": "babel ./src --out-dir ./js",
+    "browserify": "browserify -d --compact false ./js/*.js > ./dist/build.js",
+    "build": "npm run babel; npm run browserify"
+  }
+}
