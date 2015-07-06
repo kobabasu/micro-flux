@@ -2,7 +2,7 @@
 
 `hub clone kobabasu/micro-flux flux`
 
-## setting
+## npm
 1. 必要があればdevelopブランチを使う  
    `git checkout develop`
 1. package.json.sampleを確認。流用する場合はリネーム  
