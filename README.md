@@ -1,6 +1,8 @@
 # micro-flux
 
-`hub clone kobabasu/micro-flux src`
+```
+hub clone kobabasu/micro-flux src
+```
 
 ## npm
 1. 必要があればdevelopブランチを使う  
