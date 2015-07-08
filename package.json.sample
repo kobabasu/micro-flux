@@ -2,10 +2,10 @@
   "name": "flux-app",
   "version": "0.0.1",
   "description": "flux minimum app",
-  "main": "js/app.js",
+  "main": "sample/dist/app.js",
   "repository": {
     "type": "git",
-    "url": "//github.com/kobabasu/micro-flux  .git"
+    "url": "//github.com/kobabasu/micro-flux.git"
   },
   "keywords": [
     "es6",
