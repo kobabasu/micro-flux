@@ -7,8 +7,8 @@ import NoMatch from './components/NoMatch'
 
 React.render((
   <Router history={history}>
-    <Route path="/" component={Count}/>
-    <Route path="counts" component={NoMatch}/>
+    <Route path="/sample" component={Count}/>
+    <Route path="/sample/counts" component={NoMatch}/>
     <Route path="*" component={NoMatch}/>
   </Router>
 ), document.getElementById('main'));
