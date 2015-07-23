@@ -13,5 +13,7 @@ hub clone kobabasu/micro-flux src
 1. `npm run build`
 
 ## check
-1. `open sample/index.html -a Google\ Chrome`
+1. http://localhost:8080/sample/ -> reactのボタンなどが表示されればOK
+1. http://localhost:8080/sample/counts -> No Matchが表示されればOK
+1. http://localhost:8080/sample/xxx -> No Matchが表示されればOK
 1. ブラウザで確認
