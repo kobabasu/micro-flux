@@ -19,7 +19,7 @@ export default class Count extends React.Component {
   }
 
   componentWillUnmount() {
-    CountStore.destory(this._onChange.bind(this));
+    CountStore.destroy(this._onChange.bind(this));
   }
 
   render() {
@@ -34,6 +34,8 @@ export default class Count extends React.Component {
 
         <p>id: {this.state.counts.id}</p>
         <p>count: {this.state.counts.count}</p>
+
+        {this.props.children}
       </div>
     );
   }
