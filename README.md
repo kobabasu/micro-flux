@@ -1,7 +1,7 @@
 # micro-flux
 
 ```
-hub clone kobabasu/micro-flux src
+hub clone kobabasu/micro-flux app
 ```
 
 ## npm
@@ -13,7 +13,7 @@ hub clone kobabasu/micro-flux src
 1. `npm run build`
 
 ## check
-1. http://localhost:8080/sample/ -> reactのボタンなどが表示されればOK
-1. http://localhost:8080/sample/counts -> No Matchが表示されればOK
-1. http://localhost:8080/sample/xxx -> No Matchが表示されればOK
 1. ブラウザで確認
+1. http://localhost:8080/sample/ -> Homeと表示
+1. http://localhost:8080/sample/counts -> ボタン表示
+1. http://localhost:8080/sample/xxx -> No Matchと表示

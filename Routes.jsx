@@ -11,8 +11,8 @@ import NoMatch from './components/NoMatch'
 const routes = (
   <Router history={new BrowserHistory}>
     <Route component={Body}>
-      <Route path="/" components={{main: Home, sidebar: Nav}} />
-      <Route path="count" components={{main: Count, sidebar: Nav}} />
+      <Route path="/sample/" components={{main: Home, sidebar: Nav}} />
+      <Route path="/sample/count" components={{main: Count, sidebar: Nav}} />
     </Route>
     <Route path="*" components={NoMatch} />
   </Router>

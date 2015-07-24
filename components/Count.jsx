@@ -34,8 +34,6 @@ export default class Count extends React.Component {
 
         <p>id: {this.state.counts.id}</p>
         <p>count: {this.state.counts.count}</p>
-
-        {this.props.children}
       </div>
     );
   }

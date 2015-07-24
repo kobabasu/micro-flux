@@ -11,8 +11,8 @@ export default class Nav extends React.Component {
     return (
       <div>
         <ul>
-          <li><Link to="/">home</Link></li>
-          <li><Link to="count">count</Link></li>
+          <li><Link to="/sample/">home</Link></li>
+          <li><Link to="/sample/count">count</Link></li>
         </ul>
         {this.props.children}
       </div>
