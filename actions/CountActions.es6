@@ -18,7 +18,7 @@ export default {
 
   destroy: () => {
     CountDispatcher.dispatch({
-      actionType: CountConstants.DESTROY,
+      actionType: CountConstants.DESTROY
     })
   }
 }
