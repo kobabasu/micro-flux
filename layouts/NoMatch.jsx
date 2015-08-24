@@ -11,6 +11,8 @@ export default class NoMatch extends React.Component {
     return (
       <section id="NoMatch">
         <p>No Match</p>
+
+        {this.props.children}
       </section>
     );
   }

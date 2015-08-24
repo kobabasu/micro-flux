@@ -11,6 +11,8 @@ export default class Sample extends React.Component {
     return (
       <section id="Sample">
         <p>Sample</p>
+
+        {this.props.children}
       </section>
     );
   }
