@@ -35,7 +35,7 @@ const routes = (
       <Route path="/src/sample/sample"
         components={{
           header: FrontHeader,
-          main: FrontHome
+          main: FrontSample
         }} />
     </Route>
 
