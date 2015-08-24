@@ -13,10 +13,10 @@ export default class Header extends React.Component {
         <p>Header</p>
 
         <ul>
-          <li><Link to="/sample/">front home</Link></li>
-          <li><Link to="/sample/sample">front sample</Link></li>
-          <li><Link to="/sample/admin">admin home</Link></li>
-          <li><Link to="/sample/count">admin count</Link></li>
+          <li><Link to="/src/sample/">front home</Link></li>
+          <li><Link to="/src/sample/sample">front sample</Link></li>
+          <li><Link to="/src/sample/admin">admin home</Link></li>
+          <li><Link to="/src/sample/count">admin count</Link></li>
         </ul>
 
         {this.props.children}
