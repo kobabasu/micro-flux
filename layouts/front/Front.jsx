@@ -10,6 +10,7 @@ export default class Front extends React.Component {
   render() {
     return (
       <div id="Front">
+        <h1>Front</h1>
         {this.props.header}
         {this.props.main}
       </div>
