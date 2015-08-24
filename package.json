@@ -35,7 +35,7 @@
   "scripts": {
     "preinstall": "npm install -g babel babel-eslint browserify",
     "start": "NODE_ENV=production NODE_PATH=js src dist",
-    "babel": "babel ./ --out-dir ./sample/js --ignore ./sample,./node_modules",
+    "babel": "babel ./ --out-dir ./sample/js --ignore ./sample/,./node_modules/",
     "browserify": "browserify -d --compact false ./sample/js/app.js > ./sample/dist/build.js",
     "build": "npm run babel; npm run browserify"
   },
