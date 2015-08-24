@@ -1,7 +1,7 @@
 # micro-flux
 
 ```
-hub clone kobabasu/micro-flux app
+hub clone kobabasu/micro-flux src
 ```
 
 ## npm
@@ -35,6 +35,7 @@ docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/ww
 
 ## check
 1. ブラウザで確認
-1. http://localhost:8080/sample/ -> Homeと表示
-1. http://localhost:8080/sample/counts -> ボタン表示
-1. http://localhost:8080/sample/xxx -> No Matchと表示
+1. http://localhost:8080/src/sample/ -> Frontと表示
+1. http://localhost:8080/src/sample/sample -> sampleと表示
+1. http://localhost:8080/src/sample/admin -> Adminと表示
+1. http://localhost:8080/src/sample/count -> ボタン表示
