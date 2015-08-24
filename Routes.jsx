@@ -26,7 +26,13 @@ import FrontSample  from './pages/front/Sample'
 const routes = (
   <Router history={new BrowserHistory}>
     <Route component={Front}>
-      <Route path="/"
+      <Route path="/src/sample/"
+        components={{
+          header: FrontHeader,
+          main: FrontHome
+        }} />
+
+      <Route path="/src/sample/sample"
         components={{
           header: FrontHeader,
           main: FrontHome
@@ -34,10 +40,10 @@ const routes = (
     </Route>
 
     <Route component={Admin}>
-      <Route path="/admin/"
+      <Route path="/src/sample/admin"
         components={{
           header: AdminHeader,
-          main: AdminAdd
+          main: AdminHome
         }} />
     </Route>
 
