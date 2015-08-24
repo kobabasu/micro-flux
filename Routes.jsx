@@ -45,6 +45,12 @@ const routes = (
           header: AdminHeader,
           main: AdminHome
         }} />
+
+      <Route path="/src/sample/count"
+        components={{
+          header: AdminHeader,
+          main: Count
+        }} />
     </Route>
 
     <Route path="*" components={NoMatch} />
