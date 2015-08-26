@@ -19,7 +19,6 @@ export default class Header extends React.Component {
           <li><Link to="/src/sample/count">admin count</Link></li>
         </ul>
 
-        {this.props.children}
       </section>
     );
   }

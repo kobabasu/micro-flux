@@ -12,7 +12,6 @@ export default class Home extends React.Component {
       <section id="Home">
         <p>Home</p>
 
-        {this.props.children}
       </section>
     );
   }
