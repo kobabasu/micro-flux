@@ -21,6 +21,7 @@
   "dependencies": {
     "react": "*",
     "react-router": "1.0.0-beta3",
+    "react-document-title": "*",
     "object-assign": "*",
     "flux": "*"
   },
