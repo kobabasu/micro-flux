@@ -32,9 +32,6 @@ docker run --net=host --name apache -p 80:80 -p 443:443 -v /home/core/share/app:
 ```
 1. `exit`
 
-## .htaccess
-1. sample/.htaccessをappのrootに移動
-
 ## check
 1. ブラウザで確認
 1. http://localhost:8080/src/sample/ -> Frontと表示
@@ -43,5 +40,6 @@ docker run --net=host --name apache -p 80:80 -p 443:443 -v /home/core/share/app:
 1. http://localhost:8080/src/sample/count -> ボタン表示
 
 ## path
+( sample/.htaccessをappのrootに移動
 * .htaccess内のパスを変更
 * sample/index.htmlもしくは作成したindex.htmlのbuild.jsと`<base href="" />`の値を確認
