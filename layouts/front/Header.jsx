@@ -9,7 +9,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <section id="Header">
+      <header id="Header">
         <p>Header</p>
 
         <ul>
@@ -22,8 +22,7 @@ export default class Header extends React.Component {
           <li><Link to="/src/sample/count"
             >admin count</Link></li>
         </ul>
-
-      </section>
+      </header>
     );
   }
 }
