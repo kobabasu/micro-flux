@@ -7,10 +7,9 @@ hub clone kobabasu/micro-flux src
 ## npm
 1. 必要があればdevelopブランチを使う  
    `git checkout develop`
-1. package.json.sampleを確認。流用する場合はリネーム  
-   `mv package.json.sample package.json`
+1. package.jsonを確認  
 1. `npm install`
-1. `npm run build`
+1. `npm run build:sample`
 
 ## vagrant
 1. `hub clone cores/cores-vagrant coreos`
@@ -29,9 +28,12 @@ hub clone kobabasu/micro-flux src
 1. `vagnrat ssh`
 1. apacheコンテナ起動
 ```
-docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/www/html -d kobabasu/apache:0.21
+docker run --net=host --name apache -p 80:80 -p 443:443 -v /home/core/share/app:/var/www/html -d kobabasu/apache:0.21
 ```
 1. `exit`
+
+## .htaccess
+1. sample/.htaccessをappのrootに移動
 
 ## check
 1. ブラウザで確認
@@ -39,3 +41,7 @@ docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/ww
 1. http://localhost:8080/src/sample/sample -> sampleと表示
 1. http://localhost:8080/src/sample/admin -> Adminと表示
 1. http://localhost:8080/src/sample/count -> ボタン表示
+
+## path
+* .htaccess内のパスを変更
+* sample/index.htmlもしくは作成したindex.htmlのbuild.jsと`<base href="" />`の値を確認
