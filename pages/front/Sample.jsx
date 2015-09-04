@@ -10,11 +10,10 @@ export default class Sample extends React.Component {
 
   render() {
     return (
-      <section id="Sample">
+      <article id="Sample">
         <DocumentTitle title="Front Sample" />
-        <p>Sample</p>
-
-      </section>
+        <h1>Sample</h1>
+      </article>
     );
   }
 }
