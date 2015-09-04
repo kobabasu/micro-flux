@@ -10,11 +10,10 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <section id="Home">
+      <article id="Home">
         <DocumentTitle title="Admin Home" />
-        <p>Home</p>
-
-      </section>
+        <h1>Admin Home</h1>
+      </article>
     );
   }
 }
