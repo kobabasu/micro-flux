@@ -1,13 +1,12 @@
 # micro-flux
 
 ```
-hub clone kobabasu/micro-flux src
+git clone git@github.com-kobabasu:kobabasu/micro-flux.git src
 ```
 
 ## npm
 1. 必要があればdevelopブランチを使う  
    `git checkout develop`
-1. package.jsonを確認  
 1. `npm install`
 1. `npm run build:sample`
 

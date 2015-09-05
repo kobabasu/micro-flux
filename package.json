@@ -39,7 +39,7 @@
 
     "babel": "babel ./src --out-dir ./js --ignore ./src/node_modules",
     "browserify": "browserify -d --compact false ./js/app.js > ./dist/build.js",
-    "build": "npm run babel; npm run browserify",
+    "build:src": "npm run babel; npm run browserify",
 
     "build:sample": "babel ./ --out-dir ./sample/js --ignore ./sample/,./node_modules/; browserify -d --compact false ./sample/js/app.js > ./sample/dist/build.js" 
   },
