@@ -5,15 +5,21 @@ export default class Admin extends React.Component {
 
   constructor(props) {
     super(props);
+
+    document.body.setAttribute('id', 'ready-Admin');
   }
+
+  componentWillMount() {}
+
+  componentWillUnmount() {}
 
   render() {
     return (
-      <section id="Admin">
+      <div id="Admin">
         <h1>Admin</h1>
         {this.props.header}
         {this.props.main}
-      </section>
+      </div>
     );
   }
 }

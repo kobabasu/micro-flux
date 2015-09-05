@@ -1,16 +1,14 @@
 # micro-flux
 
 ```
-hub clone kobabasu/micro-flux src
+git clone git@github.com-kobabasu:kobabasu/micro-flux.git src
 ```
 
 ## npm
 1. 必要があればdevelopブランチを使う  
    `git checkout develop`
-1. package.json.sampleを確認。流用する場合はリネーム  
-   `mv package.json.sample package.json`
 1. `npm install`
-1. `npm run build`
+1. `npm run build:sample`
 
 ## vagrant
 1. `hub clone cores/cores-vagrant coreos`
@@ -25,11 +23,13 @@ hub clone kobabasu/micro-flux src
    * portの設定 80->8080
 1. `vagrant up`
 
+
+
 ## docker
 1. `vagnrat ssh`
 1. apacheコンテナ起動
 ```
-docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/www/html -d kobabasu/apache:0.21
+docker run --net=host --name apache -p 80:80 -p 443:443 -v /home/core/share/app:/var/www/html -d kobabasu/apache:0.21
 ```
 1. `exit`
 
@@ -39,3 +39,14 @@ docker run --net=host --name -p 80:80 -p 443:443 -v /home/core/share/app:/var/ww
 1. http://localhost:8080/src/sample/sample -> sampleと表示
 1. http://localhost:8080/src/sample/admin -> Adminと表示
 1. http://localhost:8080/src/sample/count -> ボタン表示
+
+## path
+( sample/.htaccessをappのrootに移動
+* .htaccess内のパスを変更
+* sample/index.htmlもしくは作成したindex.htmlのbuild.jsと`<base href="" />`の値を確認
+
+## project
+* sample/.htaccessの移動
+* package.jsonの編集
+* js,dist,docsディレクトリの作成
+* src/Routes.jsx, src/layouts{admin/header.jsx,front/header.jsx}の編集
