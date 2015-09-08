@@ -2,6 +2,8 @@ import React from 'react'
 import BrowserHistory from 'react-router/lib/BrowserHistory'
 import { Router, Route } from 'react-router'
 
+const root = { documentRoot: '/src/sample' };
+
 // components
 import Count        from './components/Count'
 
@@ -25,35 +27,45 @@ import FrontSample  from './pages/front/Sample'
 
 const routes = (
   <Router history={new BrowserHistory}>
-    <Route component={Front}>
-      <Route path="/src/sample/"
+    <Route
+      global={root}
+      component={Front}
+      >
+      <Route path={root.documentRoot + '/'}
+        global={root}
         components={{
           header: FrontHeader,
           main: FrontHome
         }} />
 
-      <Route path="/src/sample/sample"
+      <Route path={root.documentRoot + '/sample'}
+        global={root}
         components={{
           header: FrontHeader,
           main: FrontSample
         }} />
     </Route>
 
-    <Route component={Admin}>
-      <Route path="/src/sample/admin"
+    <Route
+      global={root}
+      component={Admin}
+      >
+      <Route path={root.documentRoot + '/admin/'}
+        global={root}
         components={{
           header: AdminHeader,
           main: AdminHome
         }} />
 
-      <Route path="/src/sample/count"
+      <Route path={root.documentRoot + '/admin/count'}
+        global={root}
         components={{
           header: AdminHeader,
           main: Count
         }} />
     </Route>
 
-    <Route path="*" components={NoMatch} />
+    <Route path="*" components={NoMatch} global={root} />
   </Router>
 );
 
