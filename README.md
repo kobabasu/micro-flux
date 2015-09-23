@@ -41,6 +41,8 @@ docker run --net=host --name apache -p 80:80 -p 443:443 -v /home/core/share/app:
 
 ## path
 * index.htmlのbase hrefを変更
+* index.htmlのcss,distを変更 
+  (サブディレクトリを含む絶対パスで ex: /sample/dist/build.js)
 * Routes.jsxのrootを変更
 
 ## project
