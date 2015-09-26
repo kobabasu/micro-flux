@@ -103,15 +103,26 @@ export default class YubinBango {
    * @return Object
    */
   selectAddr (yubin7, addr) {
-    if (addr[0] && addr[1]) {
-      return {
+    var res = {
+      'region_id': '',
+      'region': '',
+      'locality': '',
+      'street': '',
+      'extended': ''
+    };
+
+    if (addr) {
+      let ext = (addr[3]) ? addr[3] : '' ;
+      res = {
         'region_id': addr[0],
         'region': YubinBango.REGION[addr[0]],
         'locality': addr[1],
         'street': addr[2],
-        'extended': addr[3]
+        'extended': ext
       };
     }
+    
+    return res;
   }
   
 
