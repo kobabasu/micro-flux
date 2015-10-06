@@ -2,6 +2,8 @@ import { EventEmitter } from 'events'
 import CountDispatcher from '../dispathcer/CountDispatcher'
 import CountConstants from '../constants/CountConstants'
 
+import { http } from '../components/Http'
+
 const CHANGE_EVENT = 'change';
 
 let _counts = {};
