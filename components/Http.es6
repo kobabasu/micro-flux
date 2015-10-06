@@ -12,7 +12,7 @@
  *   console.error(e);
  * });
  *
- * @class YubinBango
+ * @object http
  * @constructor
  */
 
