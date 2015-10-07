@@ -53,7 +53,7 @@ CountDispatcher.register( function(action) {
 
     case CountConstants.DESTROY:
       destroy();
-      countStore.update();
+      countStore.destroy();
       break;
 
     default:
