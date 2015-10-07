@@ -35,7 +35,7 @@ class CountStore extends EventEmitter {
   }
 
   destroy(callback) {
-    this.removeListener(CHANGE_EVENT, callback);
+    this.removeAllListeners(CHANGE_EVENT, callback);
   }
 }
 
