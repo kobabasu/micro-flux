@@ -2,6 +2,8 @@ import { EventEmitter } from 'events'
 import CountDispatcher from '../dispathcer/CountDispatcher'
 import CountConstants from '../constants/CountConstants'
 
+import { http } from '../components/Http'
+
 const CHANGE_EVENT = 'change';
 
 let _counts = {};
@@ -33,7 +35,7 @@ class CountStore extends EventEmitter {
   }
 
   destroy(callback) {
-    this.removeListener(CHANGE_EVENT, callback);
+    this.removeAllListeners(CHANGE_EVENT, callback);
   }
 }
 
@@ -51,7 +53,7 @@ CountDispatcher.register( function(action) {
 
     case CountConstants.DESTROY:
       destroy();
-      countStore.update();
+      countStore.destroy();
       break;
 
     default:
