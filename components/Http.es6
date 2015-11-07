@@ -16,7 +16,7 @@
  * @constructor
  */
 
-export default {
+const Http = {
   http: {
     get: (url) => {
       return new Promise( (resolve, reject) => {
@@ -40,5 +40,76 @@ export default {
         rq.send(null);
       });
     }
+
+    put: (url, data) => {
+      return new Promise( (resolve, reject) => {
+
+        let rq = new XMLHttpRequest();
+
+        rq.open('PUT', url, true);
+
+        rq.onload = () => {
+          if (rq.readyState === 4 && rq.status === 200) {
+            resolve(JSON.parse(rq.response));
+          } else {
+            reject( new Error(rq.statusText) );
+          }
+        }
+
+        rq.onerror = () => {
+          reject( new Error(rq.statusText) );
+        }
+
+        rq.send(JSON.stringify(data));
+      });
+    },
+
+    post: (url, data) => {
+      return new Promise( (resolve, reject) => {
+
+        let rq = new XMLHttpRequest();
+
+        rq.open('POST', url, true);
+
+        rq.onload = () => {
+          if (rq.readyState === 4 && rq.status === 200) {
+            resolve(JSON.parse(rq.response));
+          } else {
+            reject( new Error(rq.statusText) );
+          }
+        }
+
+        rq.onerror = () => {
+          reject( new Error(rq.statusText) );
+        }
+
+        rq.send(JSON.stringify(data));
+      });
+    },
+
+    delete: (url, data) => {
+      return new Promise( (resolve, reject) => {
+
+        let rq = new XMLHttpRequest();
+
+        rq.open('DELETE', url, true);
+
+        rq.onload = () => {
+          if (rq.readyState === 4 && rq.status === 200) {
+            resolve(JSON.parse(rq.response));
+          } else {
+            reject( new Error(rq.statusText) );
+          }
+        }
+
+        rq.onerror = () => {
+          reject( new Error(rq.statusText) );
+        }
+
+        rq.send(JSON.stringify(data));
+      });
+    }
   }
 }
+
+module.exports = Http;
