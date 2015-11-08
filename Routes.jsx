@@ -1,5 +1,5 @@
 import React from 'react'
-import BrowserHistory from 'react-router/lib/BrowserHistory'
+import BrowserHistory from 'history/lib/createBrowserHistory'
 import { Router, Route } from 'react-router'
 
 const root = { documentRoot: '/src/sample' };
