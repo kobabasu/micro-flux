@@ -1,4 +1,4 @@
-import keyMirror from 'react/lib/keyMirror'
+import keyMirror from 'keymirror'
 
 const CountConstants = keyMirror({
   CREATE:  null,

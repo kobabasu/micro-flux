@@ -29,6 +29,7 @@
     "keymirror": "*",
     "moment": "*",
     "clone": "*",
+    "history": "*",
     "flux": "*"
   },
   "devDependencies": {
