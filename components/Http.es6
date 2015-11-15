@@ -39,7 +39,7 @@ const Http = {
 
         rq.send(null);
       });
-    }
+    },
 
     put: (url, data) => {
       return new Promise( (resolve, reject) => {
