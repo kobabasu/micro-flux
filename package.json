@@ -48,6 +48,7 @@
 
   "scripts": {
     "global": "npm install -g babel-core babel-cli babel-eslint browserify babelify;",
+
     "gitkeep": "touch ../js/.gitkeep; touch ../dist/.gitkeep;",
     "preinstall": "mkdir ../{js,dist}; cp -f ./sample/.htaccess ../.htaccess; npm run gitkeep;",
     "postinstall": "if [ ! -e ../node_modules ]; then mv -f ./node_modules ../; else rm -fr ./node_modules; echo 'node_modules exist'; fi;",
