@@ -1,5 +1,5 @@
 import React from 'react'
-import BrowserHistory from 'history/lib/createBrowserHistory'
+import browserHistory from 'react-router'
 import { Router, Route } from 'react-router'
 
 const root = { documentRoot: '/src/sample' };
@@ -26,7 +26,7 @@ import FrontHome    from './pages/front/Home'
 import FrontSample  from './pages/front/Sample'
 
 const routes = (
-  <Router history={new BrowserHistory}>
+  <Router history={browserHistory}>
     <Route
       global={root}
       component={Front}
