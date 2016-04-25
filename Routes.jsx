@@ -1,8 +1,14 @@
 import React from 'react'
+import { createHistory, useBasename } from 'history'
 import browserHistory from 'react-router'
 import { Router, Route } from 'react-router'
 
 const root = { documentRoot: '/src/sample' };
+
+const history = useBasename(createHistory)({
+  basename: '/cfg2a'
+})
+
 
 // components
 import Count        from './components/Count'
