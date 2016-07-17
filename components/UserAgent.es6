@@ -1,7 +1,7 @@
 /*
  * - ブラウザ判定クラス
  *
- * 使用例 (react.js)
+ * 使用例
  * let ua = new UserAgent();
  * if (ua.eq_IE9 || ua.eq_IE10) {
  *   console.log('IE9 or 10!');
@@ -10,15 +10,15 @@
  * @class UserAgent
  */
 
-/*
- * コンストラクタ
- * IEのどのバージョンか返す
- *
- * @constructor
- * @return mixed {String}
- */
 export default class UserAgent {
 
+  /*
+   * コンストラクタ
+   * IEのどのバージョンか返す
+   *
+   * @constructor
+   * @return mixed {String}
+   */
   constructor() {
     let e = typeof window.addEventListener;
     let d = typeof document.documentElement.style.maxHeight;
