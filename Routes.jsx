@@ -1,8 +1,14 @@
 import React from 'react'
-import BrowserHistory from 'history/lib/createBrowserHistory'
+import { createHistory, useBasename } from 'history'
+import browserHistory from 'react-router'
 import { Router, Route } from 'react-router'
 
 const root = { documentRoot: '/src/sample' };
+
+const history = useBasename(createHistory)({
+  basename: '/cfg2a'
+})
+
 
 // components
 import Count        from './components/Count'
@@ -26,7 +32,7 @@ import FrontHome    from './pages/front/Home'
 import FrontSample  from './pages/front/Sample'
 
 const routes = (
-  <Router history={new BrowserHistory}>
+  <Router history={browserHistory}>
     <Route
       global={root}
       component={Front}
