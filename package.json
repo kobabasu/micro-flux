@@ -33,7 +33,7 @@
     "flux": "*",
     "redux": "*",
     "react-redux": "*",
-    "pixi": "*"
+    "pixi.js": "*"
   },
   "devDependencies": {
     "babel-cli": "*",
