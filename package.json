@@ -30,7 +30,10 @@
     "moment": "*",
     "clone": "*",
     "history": "*",
-    "flux": "*"
+    "flux": "*",
+    "redux": "*",
+    "react-redux": "*",
+    "pixi": "*"
   },
   "devDependencies": {
     "babel-cli": "*",
