@@ -30,13 +30,17 @@
     "moment": "*",
     "clone": "*",
     "history": "*",
-    "flux": "*"
+    "flux": "*",
+    "redux": "*",
+    "react-redux": "*",
+    "pixi.js": "*"
   },
   "devDependencies": {
     "babel-cli": "*",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
-    "babelify": "*"
+    "babelify": "*",
+    "promise-es6": "*"
   },
 
   "browser": {

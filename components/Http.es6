@@ -1,3 +1,5 @@
+import { Promise } from 'promise-es6'
+
 /*
  * - JSONを取得するクラス
  * XMLHTTPRequestをPromiseでラップ
